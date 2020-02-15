@@ -84,7 +84,7 @@
                                                     <action selector="playSoundForButton:" destination="I2D-27-pGN" eventType="touchUpInside" id="3J5-Za-YfQ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsb-nT-HgR" userLabel="Fast Button">
+                                            <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsb-nT-HgR" userLabel="Fast Button">
                                                 <rect key="frame" x="207" y="0.0" width="207" height="200"/>
                                                 <state key="normal" image="Fast"/>
                                                 <connections>
@@ -96,14 +96,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VRT-JP-vSc">
                                         <rect key="frame" x="0.0" y="200" width="414" height="200"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W39-Hg-ctw" userLabel="High Pitch Button">
+                                            <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W39-Hg-ctw" userLabel="High Pitch Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="200"/>
                                                 <state key="normal" image="HighPitch"/>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="I2D-27-pGN" eventType="touchUpInside" id="ZGX-YD-gJo"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jx9-Yl-aTq" userLabel="Low Pitch Button">
+                                            <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jx9-Yl-aTq" userLabel="Low Pitch Button">
                                                 <rect key="frame" x="207" y="0.0" width="207" height="200"/>
                                                 <state key="normal" image="LowPitch"/>
                                                 <connections>
@@ -116,14 +116,14 @@
                                         <rect key="frame" x="0.0" y="400" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCZ-oS-6Ir" userLabel="Echo Button">
+                                            <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCZ-oS-6Ir" userLabel="Echo Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="200"/>
                                                 <state key="normal" image="Echo"/>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="I2D-27-pGN" eventType="touchUpInside" id="kjc-L3-WwB"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyz-Jm-kXG" userLabel="Reverb Button">
+                                            <button opaque="NO" tag="5" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyz-Jm-kXG" userLabel="Reverb Button">
                                                 <rect key="frame" x="207" y="0.0" width="207" height="200"/>
                                                 <state key="normal" image="Reverb"/>
                                                 <connections>
@@ -137,7 +137,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xe5-5n-7LM">
-                                <rect key="frame" x="175" y="696" width="64" height="150"/>
+                                <rect key="frame" x="201" y="696" width="64" height="155"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="Y1t-Nr-CgY"/>
                                     <constraint firstAttribute="width" constant="64" id="uyj-wA-gk4"/>
