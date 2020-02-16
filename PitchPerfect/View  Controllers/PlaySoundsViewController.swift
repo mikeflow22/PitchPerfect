@@ -47,7 +47,6 @@ class PlaySoundsViewController: UIViewController {
         switch(ButtonType(rawValue: sender.tag)!) {
         case .slow:
             playSound(rate: value)
-//            playSound(
         case .fast:
             playSound(rate: value * 5)
         case .chipmunk:
