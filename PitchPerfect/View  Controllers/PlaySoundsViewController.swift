@@ -28,6 +28,8 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var echoButton: UIButton!
     @IBOutlet weak var reverbButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
+    //add slider from 0 - 2 and pass it in for the playsound func
+    @IBOutlet weak var sliderValue: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,19 +42,22 @@ class PlaySoundsViewController: UIViewController {
     
     @IBAction func playSoundForButton(_ sender: UIButton) {
         print("Play Sound Button Pressed")
+        let value = sliderValue.value
+        print("this is the value: \(value)")
         switch(ButtonType(rawValue: sender.tag)!) {
         case .slow:
-            playSound(rate: 0.5)
+            playSound(rate: value)
+//            playSound(
         case .fast:
-            playSound(rate: 1.5)
+            playSound(rate: value * 5)
         case .chipmunk:
-            playSound(pitch: 1000)
+            playSound(rate: value, pitch: 1000)
         case .vader:
-            playSound(pitch: -1000)
+            playSound(rate: value, pitch: -1000)
         case .echo:
-            playSound(echo: true)
+            playSound(rate: value, echo: true)
         case .reverb:
-            playSound(reverb: true)
+            playSound(rate: value, reverb: true)
         }
         
         configureUI(.playing)
