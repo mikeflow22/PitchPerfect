@@ -15,14 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joM-Jy-9b5">
-                                <rect key="frame" x="129.5" y="370.5" width="155" height="155"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joM-Jy-9b5">
+                                <rect key="frame" x="129.5" y="335.5" width="155" height="225"/>
                                 <state key="normal" image="Record"/>
                                 <connections>
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9e-cc-gSg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5f-T3-PBs">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5f-T3-PBs">
                                 <rect key="frame" x="175" y="597.5" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="bb0-DT-DI7"/>
@@ -34,7 +34,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5X9-HX-JeY">
-                                <rect key="frame" x="153.5" y="550.5" width="107" height="21"/>
+                                <rect key="frame" x="153.5" y="568.5" width="107" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -42,10 +42,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="5X9-HX-JeY" firstAttribute="top" secondItem="joM-Jy-9b5" secondAttribute="bottom" constant="25" id="0cs-xM-p5z"/>
-                            <constraint firstItem="t5f-T3-PBs" firstAttribute="top" secondItem="5X9-HX-JeY" secondAttribute="bottom" constant="26" id="5nf-05-pvi"/>
-                            <constraint firstItem="joM-Jy-9b5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9Bb-bU-KlQ"/>
+                            <constraint firstItem="5X9-HX-JeY" firstAttribute="top" secondItem="joM-Jy-9b5" secondAttribute="bottom" constant="8" id="0cs-xM-p5z"/>
+                            <constraint firstItem="t5f-T3-PBs" firstAttribute="top" secondItem="5X9-HX-JeY" secondAttribute="bottom" constant="8" id="5nf-05-pvi"/>
                             <constraint firstItem="t5f-T3-PBs" firstAttribute="centerX" secondItem="5X9-HX-JeY" secondAttribute="centerX" id="GEZ-DV-R1D"/>
+                            <constraint firstItem="joM-Jy-9b5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KJ6-22-2cW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="t5f-T3-PBs" secondAttribute="bottom" constant="200.5" id="iAv-hf-bFF"/>
                             <constraint firstItem="5X9-HX-JeY" firstAttribute="centerX" secondItem="joM-Jy-9b5" secondAttribute="centerX" id="tuB-Hf-wTU"/>
                             <constraint firstItem="joM-Jy-9b5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z9Q-1z-A2J"/>
                         </constraints>
@@ -113,7 +114,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" id="jco-Fw-sUU">
-                                        <rect key="frame" x="0.0" y="400" width="362" height="200"/>
+                                        <rect key="frame" x="0.0" y="400" width="366" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCZ-oS-6Ir" userLabel="Echo Button">
