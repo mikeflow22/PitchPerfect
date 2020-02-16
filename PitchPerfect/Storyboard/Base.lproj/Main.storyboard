@@ -135,6 +135,9 @@
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="CLe-G8-J8S"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xe5-5n-7LM">
                                 <rect key="frame" x="175" y="696" width="64" height="64"/>
@@ -147,8 +150,8 @@
                                     <action selector="stopButtonPressed:" destination="I2D-27-pGN" eventType="touchUpInside" id="rga-ql-Zmo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playback Speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOC-Id-nq9">
-                                <rect key="frame" x="146" y="783" width="122.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playback Speed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOC-Id-nq9">
+                                <rect key="frame" x="100" y="783" width="214" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -161,14 +164,17 @@
                         <constraints>
                             <constraint firstItem="xe5-5n-7LM" firstAttribute="leading" secondItem="UUG-OK-rZZ" secondAttribute="leading" constant="175" id="6Mj-6E-EM3"/>
                             <constraint firstItem="UUG-OK-rZZ" firstAttribute="bottom" secondItem="L3f-c3-Azw" secondAttribute="bottom" constant="27" id="82G-mF-znP"/>
+                            <constraint firstItem="UUG-OK-rZZ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IOC-Id-nq9" secondAttribute="trailing" id="DVO-5z-iH6"/>
                             <constraint firstItem="xe5-5n-7LM" firstAttribute="top" secondItem="6x0-Dj-kYQ" secondAttribute="bottom" constant="8" id="JN1-w5-Jxv"/>
                             <constraint firstItem="L3f-c3-Azw" firstAttribute="leading" secondItem="UUG-OK-rZZ" secondAttribute="leading" constant="20" id="Rii-Fc-hl6"/>
                             <constraint firstItem="IOC-Id-nq9" firstAttribute="top" secondItem="xe5-5n-7LM" secondAttribute="bottom" constant="23" id="YbB-gF-vo8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6x0-Dj-kYQ" secondAttribute="trailing" constant="16" id="aAn-Z9-xI7"/>
+                            <constraint firstItem="IOC-Id-nq9" firstAttribute="leading" secondItem="UUG-OK-rZZ" secondAttribute="leading" constant="100" id="aeO-TL-7mt"/>
                             <constraint firstItem="IOC-Id-nq9" firstAttribute="centerX" secondItem="gOF-B9-xZp" secondAttribute="centerX" id="ago-ql-vgj"/>
                             <constraint firstItem="6x0-Dj-kYQ" firstAttribute="top" secondItem="UUG-OK-rZZ" secondAttribute="top" id="jM2-Ob-fG6"/>
                             <constraint firstItem="L3f-c3-Azw" firstAttribute="centerX" secondItem="gOF-B9-xZp" secondAttribute="centerX" id="kXx-bt-VCy"/>
                             <constraint firstItem="xe5-5n-7LM" firstAttribute="centerX" secondItem="gOF-B9-xZp" secondAttribute="centerX" id="nSP-7h-dWr"/>
+                            <constraint firstItem="L3f-c3-Azw" firstAttribute="top" secondItem="IOC-Id-nq9" secondAttribute="bottom" constant="1.5" id="rNc-cm-Oxa"/>
                             <constraint firstItem="UUG-OK-rZZ" firstAttribute="trailing" secondItem="L3f-c3-Azw" secondAttribute="trailing" constant="20" id="wf4-A7-Nv4"/>
                             <constraint firstItem="6x0-Dj-kYQ" firstAttribute="leading" secondItem="UUG-OK-rZZ" secondAttribute="leading" constant="16" id="xcB-Bj-Zl3"/>
                         </constraints>

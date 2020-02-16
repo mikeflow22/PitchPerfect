@@ -68,7 +68,7 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
         
         // node for reverb
         let reverbNode = AVAudioUnitReverb()
-        reverbNode.loadFactoryPreset(.cathedral)
+        reverbNode.loadFactoryPreset(.largeChamber)
         reverbNode.wetDryMix = 50
         audioEngine.attach(reverbNode)
         
