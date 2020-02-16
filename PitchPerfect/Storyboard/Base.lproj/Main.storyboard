@@ -114,7 +114,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" id="jco-Fw-sUU">
-                                        <rect key="frame" x="0.0" y="400" width="366" height="200"/>
+                                        <rect key="frame" x="0.0" y="400" width="760" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCZ-oS-6Ir" userLabel="Echo Button">

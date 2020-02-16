@@ -25,23 +25,10 @@ class RecordSoundsViewController: UIViewController {
     }
     
     func configureUI(isRecording: Bool){
-        if isRecording {
-            recordingLabel.text = "Recording in Progress"
-            stopRecordingProperties.isEnabled = true
-            recordButtonProperties.isEnabled = false
-//            startRecording()
-            self.audioRecorderController.startRecording(delegate: self)
-        } else {
-            recordButtonProperties.isEnabled = true
-                  stopRecordingProperties.isEnabled = false
-                  recordingLabel.text = "Tap to Record"
-                  
-//                  audioRecorder.stop()
-            self.audioRecorderController.audioRecorder.stop()
-            
-                  let audioSession = AVAudioSession.sharedInstance()
-                  try! audioSession.setActive(false)
-        }
+        recordingLabel.text = isRecording ? "Recording in progress" : "Tap to record"
+        stopRecordingProperties.isEnabled = isRecording
+        recordButtonProperties.isEnabled = !isRecording
+        isRecording ? self.audioRecorderController.startRecording(delegate: self) : self.audioRecorderController.audioRecorder.stop()
     }
     
 //    func startRecording(){
@@ -70,6 +57,8 @@ class RecordSoundsViewController: UIViewController {
     
     @IBAction func stopRecording(_ sender: UIButton) {
       self.configureUI(isRecording: false)
+        let audioSession = AVAudioSession.sharedInstance()
+        try! audioSession.setActive(false)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
