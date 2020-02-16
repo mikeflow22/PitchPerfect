@@ -8,6 +8,11 @@
 
 import AVFoundation
 
-struct AudioRecorder {
-    var avAudioRecorder: AVAudioRecorder
+class AudioRecorder {
+    var url: URL
+    var settings: [String: Any]
+    init(url: URL, settings: [String: Any] ) {
+        self.url = url
+        self.settings = settings
+    }
 }

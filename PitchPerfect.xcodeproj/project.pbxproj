@@ -16,6 +16,7 @@
 		1B03377423F86F95008EC5DD /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B03377323F86F95008EC5DD /* PlaySoundsViewController.swift */; };
 		1B03377723F8B4EA008EC5DD /* PlaySoundViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B03377623F8B4EA008EC5DD /* PlaySoundViewController+Audio.swift */; };
 		1B03377B23F8C296008EC5DD /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B03377A23F8C296008EC5DD /* AudioRecorder.swift */; };
+		1B03377E23F8C6A8008EC5DD /* AudioRecorderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B03377D23F8C6A8008EC5DD /* AudioRecorderController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1B03377323F86F95008EC5DD /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 		1B03377623F8B4EA008EC5DD /* PlaySoundViewController+Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaySoundViewController+Audio.swift"; sourceTree = "<group>"; };
 		1B03377A23F8C296008EC5DD /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		1B03377D23F8C6A8008EC5DD /* AudioRecorderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		1B03375B23F85472008EC5DD /* PitchPerfect */ = {
 			isa = PBXGroup;
 			children = (
+				1B03377C23F8C68D008EC5DD /* Model Controller */,
 				1B03377923F8C288008EC5DD /* Model */,
 				1B03377823F8B6E9008EC5DD /* Helpers */,
 				1B03377023F85582008EC5DD /* Storyboard */,
@@ -114,6 +117,14 @@
 				1B03377A23F8C296008EC5DD /* AudioRecorder.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1B03377C23F8C68D008EC5DD /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B03377D23F8C6A8008EC5DD /* AudioRecorderController.swift */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +202,7 @@
 				1B03376123F85472008EC5DD /* RecordSoundsViewController.swift in Sources */,
 				1B03375D23F85472008EC5DD /* AppDelegate.swift in Sources */,
 				1B03377723F8B4EA008EC5DD /* PlaySoundViewController+Audio.swift in Sources */,
+				1B03377E23F8C6A8008EC5DD /* AudioRecorderController.swift in Sources */,
 				1B03377423F86F95008EC5DD /* PlaySoundsViewController.swift in Sources */,
 				1B03375F23F85472008EC5DD /* SceneDelegate.swift in Sources */,
 			);
